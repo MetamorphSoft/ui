@@ -25,7 +25,6 @@ fn main() {
     eframe::run_simple_native(&format!("Metamorph - {}", args.title), options, move |ctx, _frame| {
         egui::CentralPanel::default().show(ctx, |ui| {
             let args = Args::parse();
-            ctx.set_pixels_per_point(2.0);
             ui.heading(args.title);
             ui.label(args.message);        
             ui.with_layout(egui::Layout::right_to_left(egui::Align::BOTTOM), |ui| {
