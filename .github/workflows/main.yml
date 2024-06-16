@@ -14,6 +14,10 @@ jobs:
         include:
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-latest
+          - target: arm64-unknown-linux-gnu
+            os: ubuntu-latest
+          - target: armhf-unknown-linux-gnu
+            os: ubuntu-latest
           - target: x86_64-apple-darwin
             os: macos-latest
           - target: x86_64-pc-windows-msvc
